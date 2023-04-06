@@ -53,29 +53,16 @@ button:hover {
     box-shadow: 3px 3px 10px #00ffae;
 }
 
-
-const showMsg = () => {
-    if(pass.value.length > minValue && pass.value.match(letters) && pass.value.match(numbers) && pass.value.match(special))
-{
-p.textContent = 'Masz bardzo dobre hasło!'
-p.style.color = 'lime'
-} else if  (pass.value.length > minValue && pass.value.match(letters) && pass.value.match(numbers)) {
-p.textContent = 'Masz dobre hasło!'
-p.style.color = 'gold'
-} else {
-    p.textContent = 'Masz słabe hasło!'
-    p.style.color = 'tomato'
-}
-}
-pass.addEventListener('keyup', showMsg)
-
-const checkPassword = () => {
-    if(pass.value !== '') {
-        showMsg()
-    } else {
-    p.textContent = 'Nie podałeś hasła..'
-    p.style.color = ''
+@media (max-width: 500px) {
+    label {
+        font-size: 22px;
     }
-}
-
-pass.addEventListener('keyup', checkPassword)
+    
+    p {
+        text-align: center;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    
+  }
