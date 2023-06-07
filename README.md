@@ -3,5 +3,5 @@ This project is a password validation tool that checks if a password is strong e
 If the password meets all three criteria, the tool displays a message "You have a very good password". If it meets only two of the criteria, the message will be "You have a good password". If it meets only one or none of the criteria, the message will be "You have a weak password".
 The tool updates the message in real-time as the user types or modifies the password. If the user deletes the password, the message prompts the user to enter a password. The tool is implemented using HTML, CSS, and JavaScript.
 <br>
-*project developed as part of the 'javascript' course*
+*project developed as part of the 'javascript' course
 
